@@ -1,0 +1,514 @@
+/* ------------------------------------------------------------ */
+/* imports and utilities */
+
+/* 3rd-party CSS files */
+@import 'vendor/h5bp-head.css';
+@import 'vendor/normalize.css';
+@import 'vendor/h5bp-tail.css';
+
+/* use a more intuitive box sizing model (http://is.gd/wNVjAo) */
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+/* Scale down images and embedded videos so they don't overflow their parents */
+img, object { max-width: 100%; }
+
+/*	Development/layout aid. Remove the comments
+	on this rule in order to draw boxes around DIVs
+	and other elements used for layout. */
+/* 
+div, main, article, section, aside, hgroup, header, footer, address, nav {
+	border: 1px solid rgba(255,0,0,0.15) !important;
+	background: rgba(255,0,0,0.05) !important;		
+}
+*/
+
+
+/* ------------------------------------------------------------ */
+/* start project-specifc styles below this line */
+
+
+/*	Generally, you will only want one container element in
+	the document, wrapping around the main content area. 
+	If you have more than one container, you are probably doing
+	something wrong. 	
+*/
+.container {
+	margin-top: 1em;
+	margin-right: auto;
+	margin-bottom: 1em;
+	margin-left: auto;
+	width: 90%;
+	max-width: 1200px;
+	padding: 2em;
+	border: 5px solid #eee;
+}
+
+
+
+/* navbar */
+
+.global-nav{
+	margin-right: 0pt;
+	margin-left: 0pt;
+	text-align: center;
+    margin: 0px;
+    width: 100%;
+}
+
+.global-nav ul{
+	padding-left: 0pt;
+	text-align: center;
+
+}
+
+.global-nav li{
+	margin-right: -4pt;
+	list-style-type: none;
+	display:inline-block;	
+}
+
+.global-nav a{
+	background: #FFA39A ;
+	padding:13pt;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 10pt;
+	color: #8A363D;
+	padding-left: 30pt;
+	padding-right: 30pt;
+}
+
+.global-nav a:hover {
+	background: #CBFFF3;
+}
+
+/* navbar */
+
+
+
+
+
+.homepage-h1 {
+	margin-bottom: : 0pt;
+	color: #f47a6e;
+	font-size: 90pt;
+	font-family: 'Oswald', sans-serif; 
+	text-align: center;
+	letter-spacing: 20pt;
+	margin-top: 0pt; 
+	margin-bottom: 25pt;
+
+}
+
+.homepage-h3 {
+	color:#48615F;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 18pt;
+	text-align: center;
+	margin-top: 0pt;
+	letter-spacing:.7pt;
+}
+
+.homepage-h2 {margin-right:auto;
+	margin-top:auto;
+	color: #80adaa;
+	font-family:  'Oswald', sans-serif; 
+	font-size: 25pt;
+    padding: 10px;
+    text-align: center }
+
+p,a {
+	margin-right:auto;
+	margin-top:auto;
+	color: #af454d;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-size: 10pt;
+    padding: 10px;
+    text-align: center 
+}
+
+.homepage-b {
+	background:-webkit-linear-gradient(left, #f47a6e, #bdfffc,#bdfffc,#bdfffc, #f47a6e)
+}
+
+.hompage-pic{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    width: 35%;
+}
+
+
+
+
+
+.brief-bio-b{
+	background-color: #F49F97;
+}
+
+.title {
+	text-align: left;
+	margin-top: 40pt;
+	margin-left: 50pt;
+	color: #283635;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 90pt;
+}
+
+.image{
+	grid-column: 1/2;
+	width: 100%;
+	margin-right: 40pt;
+	margin-top: 50pt;
+
+}
+
+.headings{
+	font-size: 30pt;
+	font-family: 'Oswald', sans-serif; 
+	grid-column: 2/3;
+	margin-right: 50pt;
+	text-align: left;
+	color:#283635;
+	margin-top: 0pt;
+}
+
+.text{
+	font-size: 13pt;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	grid-column: 2/3;
+	margin-right: 50pt;
+	margin-left: 20;
+	text-align: left;
+	color:#283635 ;
+}
+
+
+.grid{ 
+	text-align: left;
+	margin-left: 50pt;
+	display: grid; 
+	grid-template-columns: 1fr 1fr;	
+}
+
+
+
+
+
+
+.music-grid-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+}
+
+
+.kanye-albums{
+  grid-column: 1/2;
+  grid-row: 1;
+  background-color: #80adaa;
+  text-align:center; 
+  padding: 15pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 30pt;
+}
+
+.the-college-dropout {
+  grid-column: 2/3;
+  grid-row: 1;
+  background-color: #5D7D7C; 
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+.the-college-dropout:hover {
+	background: #FFA59F;
+}
+
+
+.late-registration {
+  grid-column: 3/4;
+  grid-row: 1;
+  background-color:#bdfffc ;
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+.late-registration:hover {
+	background: #FFA59F;
+}
+
+
+.graduation {
+  grid-column: 4/5;
+  grid-row: 1;
+  background-color: #9FD6D4;
+  text-align:center;
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+.graduation:hover {
+	background: #FFA59F;
+}
+
+
+.heartbreak {
+  grid-column: 1/2;
+  grid-row: 2;
+  background-color:#9FD6D4;
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+.heartbreak:hover {
+	background: #FFA59F;
+}
+
+
+.d-t-f {
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color:#bdfffc;
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+.d-t-f:hover {
+	background: #FFA59F;
+}
+
+
+.yeezus{
+  grid-column: 3/4;
+  grid-row: 2;
+  background-color:#80adaa; 
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+
+.yeezus:hover {
+	background: #FFA59F;
+}
+
+
+.life-of-pablo {
+  grid-column: 4/5;
+  grid-row: 2;
+  background-color:#5D7D7C;
+  text-align:center; 
+  padding: 50pt;
+  color: black;
+  font-family: 'Oswald', sans-serif; 
+  font-size: 15pt;
+}
+
+.life-of-pablo:hover {
+	background: #FFA59F;
+}
+
+
+
+
+
+.iconic-quotes-h1{
+	text-align: left;
+	color: black;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 80pt;
+	margin-bottom: 0pt;
+}
+
+.quotes{
+	
+	font-size: 20pt;
+	margin:0pt;
+	color: black;
+	margin-right: 15pt;
+	font-family: 'Oswald', sans-serif; 
+}
+
+.iconic-quotes-b{
+	background-color: #80adaa
+}
+
+
+
+
+
+
+.impact-b{
+	background-color: #f47a6e
+}
+
+.impact-tittle{ 
+	
+	color: black;
+	font-size: 80pt;
+	font-family: 'Oswald', sans-serif; 
+	
+}
+
+.impact-h1{
+	color: black;
+	margin-left: 30pt;
+	font-family: 'Oswald', sans-serif; 
+}
+
+.impact-p{
+	color: black;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-size: 13pt;
+	text-align: left;
+	margin-top: 0pt;
+	padding-top: 0pt;
+	padding-bottom: 0pt;
+	margin-left: 30pt
+}
+
+
+
+
+
+
+
+
+
+.achievements-b{
+	 background: #bdfffc
+}
+
+
+
+.achievments-p {
+	color: #688C8A;
+	font-family: 'Encode Sans Condensed', sans-serif;
+	font-size: 14pt;
+    text-align: center;
+    margin-left: 100pt;
+    margin-right: 100pt;
+}
+
+.achievments-sub-t{
+	color: #f47a6e ;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 30pt;
+    text-align: center;
+}
+
+
+.achievments-header{
+	display: grid; 
+	grid-template-columns:1fr 3fr 1fr;
+	padding: 10pt;
+}
+
+.achievements-h1{
+	margin-bottom: 0pt;
+	color: #f47a6e;
+	font-size: 55pt;
+	font-family: 'Oswald', sans-serif; 
+	text-align: center;
+	margin-top: 0pt;
+	background-color: #bdfffc;
+	padding-top: 100pt;
+	padding-left: 0pt;
+	padding-right: 0pt
+}
+
+
+
+
+
+
+
+.childhood-b{
+	background-color: #C5E3DF;
+	margin-right:50pt ;
+	margin-left:50pt ;
+}
+
+.childhood-tittle{
+	color: #394C4B;
+	font-size: 70pt;
+	font-family: 'Oswald', sans-serif; 
+	text-align: left;
+}
+
+.childhood-sub-t{
+	text-align: left;
+	color: black;
+	margin-top: 0pt;
+	margin-left: 0pt;
+	padding: 0pt;
+}
+
+.childhood-h1{
+	text-align: left;
+	color: #394C4B;
+	font-family: 'Oswald', sans-serif; 
+	font-size: 30pt;
+	margin-top: 0pt;
+	padding: 0pt;
+}
+
+.childhood-pics{
+
+	grid-column: 1/2;
+	width: 70%;
+	margin-right: 40pt;
+	margin-top: 50pt;
+
+
+}
+
+
+
+
+.fashion-b{
+	background-color: #C5E3DF;
+	
+}
+
+.fashion-h{
+font-size: 60pt;
+padding-top: 1em;
+color:#374A49;
+font-family: 'Oswald', sans-serif; 
+text-align: center;
+
+}
+
+.fashion-h2{
+color:#394C4B;
+font-size:20pt;
+text-align: center;
+font-family: 'Oswald', sans-serif; 
+}
+
+.fashion-p{
+	font-size: 20pt;
+}
+
+
+
+
+
+
+
+
+
